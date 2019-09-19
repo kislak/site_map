@@ -14,7 +14,9 @@ ActiveRecord::Schema.define(version: 2019_09_19_215830) do
 
   create_table "site_map_nodes", force: :cascade do |t|
     t.string "link_name"
-    t.string "path"
+    t.string "link_path"
+    t.string "html_id"
+    t.string "html_href"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "ancestry"

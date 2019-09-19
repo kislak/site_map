@@ -1,0 +1,8 @@
+<ul>
+   <li>
+       <a href="<%= site_map_node.html_href %>" id="<%= site_map_node.html_id %>"><%= site_map_node.link_name %></a>
+       <% site_map_node.children.map do |node| %>
+         <%= render node %>
+       <%  end %>
+   </li>
+</ul>

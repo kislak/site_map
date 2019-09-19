@@ -4,10 +4,12 @@
 #
 #  id         :integer          not null, primary key
 #  ancestry   :string
+#  html_href  :string
 #  link_name  :string
-#  path       :string
+#  link_path  :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  html_id    :string
 #
 # Indexes
 #
