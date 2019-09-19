@@ -1,0 +1,2 @@
+class SiteMapNodesController < ApplicationController
+end

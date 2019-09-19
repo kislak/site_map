@@ -1,0 +1,2 @@
+class SiteMapNode < ApplicationRecord
+end
