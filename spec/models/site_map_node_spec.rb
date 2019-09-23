@@ -32,10 +32,26 @@ RSpec.describe SiteMapNode, type: :model do
     expect(node.html_id).to eq('home')
   end
 
-  it 'set_html_ref' do
+  it 'set_html_id for a child' do
+    parent_node = create(:site_map_node)
+    node = create(:site_map_node, link_name: 'Settings')
+    node.parent = parent_node
+    node.save
+    expect(node.html_id).to eq('home.settings')
+  end
+
+  it 'set_html_href' do
     node = build(:site_map_node)
     expect(node.html_href).to eq(nil)
     node.save
     expect(node.html_href).to eq('/home/')
+  end
+
+  it 'set_html_href for a child' do
+    parent_node = create(:site_map_node)
+    node = create(:site_map_node, link_path: 'settings')
+    node.parent = parent_node
+    node.save
+    expect(node.html_href).to eq('/home/settings/')
   end
 end
