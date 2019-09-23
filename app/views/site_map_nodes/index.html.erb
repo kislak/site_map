@@ -1,0 +1,13 @@
+<script id="node" type="text/x-handlebars-template">
+<ul>
+  <li>
+    <a href="{{html_href}}" id="{{html_id}}">{{link_name}}</a>
+    {{#each children}}
+    {{> node}}
+    {{/each}}
+  </li>
+</ul>
+</script>
+
+<div id="site-map">
+</div>
