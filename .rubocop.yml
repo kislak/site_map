@@ -1,0 +1,16 @@
+AllCops:
+  Include:
+    - '**/*.rb'
+    - '**/*.gemfile'
+    - '**/*.gemspec'
+    - '**/*.rake'
+    - '**/*.ru'
+    - '**/Gemfile'
+  Exclude:
+    - 'spec/**/*.rb'
+    - 'lib/**/*.*'
+    - 'node_modules/**/*.*'
+    - 'db/migrate/**/*.*'
+    - 'db/schema.rb'
+    - 'config/**/*.*'
+    - 'bin/**'
