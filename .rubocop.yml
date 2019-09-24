@@ -14,3 +14,8 @@ AllCops:
     - 'db/schema.rb'
     - 'config/**/*.*'
     - 'bin/**'
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
